@@ -1,0 +1,94 @@
+/*
+ * Start of CSS for PIXIBO
+ */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+body{
+  background-color:#1F2024;
+  opacity:50%;
+  width:375px !important;
+  height:667px;
+}
+.carousel-inner img{
+  width:375px !important;
+  height:667px !important;
+}
+.decide{
+  margin:100px auto;
+  width:250px;
+  height:50px;  
+  font-family: 'Lato', sans-serif;
+  color:#FFFFFF;
+  font-size:14px;
+  border-radius:25px;
+  margin-left:15%;
+}
+.glyphicon-search{
+  font-size: x-large;
+}
+.jumbotron{
+  background-color:#00a4ff;
+  margin-bottom: 0px;
+}
+.pi{
+  background-color:#E6E9ED;
+  border:20px solid #E6E9Ed;
+  margin-top:20px;  
+  max-width: 250px;
+  border-radius: 15px 15px 15px 0px;
+  font-family: 'Sofia';
+  font-size:14px;
+}
+#chat-container{
+  width:350px;
+  height:580px;
+  border:2px solid #FFFFFF;
+  border-radius:10px;
+  background-color:#FFFFFF;
+  padding:15px;
+  overflow:scroll;
+}
+footer{
+  height:70px;
+  width:350px;
+  background-color: #B1B1B1;
+  margin-top:-28px;
+}
+
+.you{
+  background-color:#7ca9de;
+  border:20px solid #7ca9de;
+  margin-top:20px;  
+  max-width: 250px;
+  border-radius: 15px 15px 0px 15px;
+  font-family: 'Sofia';
+  font-size:14px;
+  color:#FFFFFF;
+  margin-left:15%;  
+}
+
+#slider-controls{
+  border:1px solid #a58c8c;
+  border-bottom-left-radius:12px;
+   border-bottom-right-radius:12px;
+  display:block;
+  max-width: 250px;
+  height:350px;
+}
+#height{
+  height:50%;
+}
+.btn-group{
+  margin-top:20px;
+}
+#height .plus,
+#weight .plus
+{
+  float:left;
+}
+#height .minus,
+#weight .minus
+{
+  float:right;
+}
+/*--End of CSS --*/

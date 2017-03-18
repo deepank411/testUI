@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pixibo UI challenge</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+    <div class="app-bg-container">
+        <div class="app-bg">
+        </div>
+        <div class="pi-chat-button">
+            <button class="pi-button">Tap to talk to PI</button>
+        </div>
+        <div class="pi-chat-board-container">
+            <div class="pi-chat-board">
+                <div class="pi-chat-board-header">
+                    <span>-</span>
+                </div>
+                <div class="pi-chat-board-body">
+                    <div class="pi-msg-container">
+                        <div class="pi-msg">
+                            Hi Paul, I'm PI.
+                        </div>
+                    </div>
+                    <div class="pi-msg-container">
+                        <div class="pi-msg">
+                            I'm your new personal fitting assistant.
+                        </div>
+                    </div>
+                    <div class="pi-msg-container">
+                        <div class="pi-msg has-control-elements">
+                            I can find your size in just one click
+                        </div>
+                        <div class="pi-input-panel">
+                            <div class="pi-input-panel-section">
+                                <p class="pi-input-header">Height</p>
+                                <div class="pi-input-controls">
+                                    <div class="pi-input-slider">
+                                        <div class="pi-input-slider-track">
+                                            <div class="pi-input-slider-bar"></div>
+                                            <div class="pi-input-slider-drag"></div>
+                                        </div>
+                                    </div>
+                                    <div class="pi-input-reading">
+                                        <span>-</span><span>158</span><span>+</span>
+                                    </div>
+                                    <div class="pi-input-unit">
+                                        <span class="unit">
+                                            ft/in
+                                        </span><span class="unit active">
+                                            cm
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pi-input-panel-section-divider"></div>
+                            <div class="pi-input-panel-section">
+                                <p class="pi-input-header">Weight</p>
+                                <div class="pi-input-controls">
+                                    <div class="pi-input-slider">
+                                        <div class="pi-input-slider-track">
+                                            <div class="pi-input-slider-bar"></div>
+                                            <div class="pi-input-slider-drag"></div>
+                                        </div>
+                                    </div>
+                                    <div class="pi-input-reading">
+                                        <span>-</span><span>57</span><span>+</span>
+                                    </div>
+                                    <div class="pi-input-unit">
+                                        <span class="unit">
+                                            st/lb
+                                        </span><span class="unit active">
+                                            kg
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-msg-container chat-msg">
+                        <div class="my-msg dontshow">
+                            Tell me my size
+                        </div>
+                    </div>
+                </div>
+                <div  class="pi-chat-board-footer">
+                    <div class="pi-loader">
+                        <img src="../PNGs/loading-dots.gif"/>
+                    </div><div class="pi-chat-board-footer-content">
+                        <div class="my-msg-container footer-msg dontshow">
+                            <div class="my-msg">
+                                Tell me my size
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
