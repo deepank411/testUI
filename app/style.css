@@ -2,17 +2,17 @@
 
 @font-face {
 	font-family: 'Sofia Pro Regular';
-	src: url('./Fonts/Sofia Pro/Mostardesign - SofiaProRegular.otf');
+	src: url('./Fonts/Sofia Pro/Mostardesign - SofiaProRegular.otf') format("truetype");
 }
 
 @font-face {
 	font-family: 'Sofia Pro Medium';
-	src: url('./Fonts/Sofia Pro/Mostardesign - SofiaProMedium.otf');
+	src: url('./Fonts/Sofia Pro/Mostardesign - SofiaProMedium.otf') format("truetype");
 }
 
 @font-face {
 	font-family: 'Sofia Pro Bold';
-	src: url('./Fonts/Sofia Pro/Mostardesign - SofiaProSemiBold.otf');
+	src: url('./Fonts/Sofia Pro/Mostardesign - SofiaProSemiBold.otf') format("truetype");
 }
 
 :root {

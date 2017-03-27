@@ -13,10 +13,8 @@ $(document).ready(function(){
 		setTimeout(function() {
 			$(".loader img").fadeOut();
 			$(".footer-btn").slideToggle("slow");
-			// $(".chat-bubble").slideToggle("slow");
 		}, 5000);
 		$(".container").addClass("dark-bg");
-		// $(".container").css("background", "rgba(31,32,36,0.5)");
 	});
 
 	$(".close-popup").click(function(){
@@ -63,10 +61,6 @@ $(document).ready(function(){
 
 	$("#amount").val($("#height").slider("value"));
 
-	// $("#amount").keyup(function() {
-	//     $("#height").slider("value" , $(this).val())
-	// });
-
 	$(".decreaseVal1").click(function(){
 		var currentVal = $("#height").slider("value");
 		var min = $("#height").slider("option", "min");
@@ -104,10 +98,6 @@ $(document).ready(function(){
 	});
 
 	$("#amount1").val($("#weight").slider("value"));
-
-	// $("#amount1").keyup(function() {
-	//     $("#weight").slider("value" , $(this).val())
-	// });
 
 	$(".decreaseVal2").click(function(){
 		var currentVal = $("#weight").slider("value");
