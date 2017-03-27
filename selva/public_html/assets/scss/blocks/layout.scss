@@ -1,0 +1,56 @@
+.main-block{
+    font-family: $Mostardesign-SofiaProMedium;
+    .btn-block{
+        text-align:center;
+        .btn-blue{
+            text-align: center;
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px 15px 15px 0;
+            font-size: 1.5em;
+            background-color:#5e96ed;
+            font-family: $Mostardesign-SofiaProMedium;
+            color:#fff;
+            margin: 25px 0;
+        }   
+    }
+    .left-arrow-button,.right-arrow-button{
+        font-size: 1.5em;
+        margin: 25px 0;
+    }
+    .mobile-container{
+        padding: 0;
+        max-height: 667px;
+        overflow: auto;
+        .header{
+            background-color:$body-color;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            p{
+                padding: 10px 0;
+                width: 100%;
+                font-size: 1.5em;
+            }
+            i{
+                padding: 10px 15px;
+                font-size: 1.5em;
+            }
+        }
+        .chat-block{
+            padding-right: 15px;
+            padding-left: 15px;
+            .bot-chat{
+                background-color: #e6e9ec;
+                max-width: 350px;
+                padding: 10px;
+                border-radius:15px 15px 15px 0;
+                margin:20px 0;
+                p{
+                    color:$black-color;
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+}

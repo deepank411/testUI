@@ -1,0 +1,57 @@
+.main-block {
+  font-family: Mostardesign-SofiaProMedium; }
+  .main-block .btn-block {
+    text-align: center; }
+    .main-block .btn-block .btn-blue {
+      text-align: center;
+      width: 100%;
+      max-width: 250px;
+      border-radius: 15px 15px 15px 0;
+      font-size: 1.5em;
+      background-color: #5e96ed;
+      font-family: Mostardesign-SofiaProMedium;
+      color: #fff;
+      margin: 25px 0; }
+  .main-block .left-arrow-button, .main-block .right-arrow-button {
+    font-size: 1.5em;
+    margin: 25px 0; }
+  .main-block .mobile-container {
+    padding: 0;
+    max-height: 667px;
+    overflow: auto; }
+    .main-block .mobile-container .header {
+      background-color: #f1f1f1;
+      display: flex;
+      width: 100%;
+      align-items: center; }
+      .main-block .mobile-container .header p {
+        padding: 10px 0;
+        width: 100%;
+        font-size: 1.5em; }
+      .main-block .mobile-container .header i {
+        padding: 10px 15px;
+        font-size: 1.5em; }
+    .main-block .mobile-container .chat-block {
+      padding-right: 15px;
+      padding-left: 15px; }
+      .main-block .mobile-container .chat-block .bot-chat {
+        background-color: #e6e9ec;
+        max-width: 350px;
+        padding: 10px;
+        border-radius: 15px 15px 15px 0;
+        margin: 20px 0; }
+        .main-block .mobile-container .chat-block .bot-chat p {
+          color: #313131;
+          padding: 0 15px; }
+
+@font-face {
+  font-family: Mostardesign-SofiaProMedium;
+  src: url(../fonts/Mostardesign-SofiaProMedium.otf) format("opentype"); }
+
+@font-face {
+  font-family: Mostardesign-SofiaProSemiBold;
+  src: url(../fonts/Mostardesign-SofiaProSemiBold.otf) format("opentype"); }
+
+@font-face {
+  font-family: Mostardesign-SofiaProRegular;
+  src: url(../fonts/Mostardesign-SofiaProRegular.otf) format("opentype"); }
