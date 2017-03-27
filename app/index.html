@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Pixibo - Styist for everyone">
+	<meta name="author" content="Deepank Agarwal">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Facebook Open Graph meta -->
+	<meta property="og:title" content="Pixibo">
+	<meta property="og:description" content="Stylist for everyone">
+	<meta name="theme-color" content="#5E96ED">
+
+	<title>Pixibo</title>
+
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+	<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="PixiboMainContainer">
+			<div id="piHeader">
+				<div class="header-content left">
+					<img src="PNGs/settingscog.png"/>
+					<!-- <i class="fa fa-minus"></i> -->
+				</div>
+				<div class="header-content right">
+					<i class="fa fa-minus close-popup"></i>
+				</div>
+			</div>
+			<div id="piBody">
+				<div class="chat-bubble bub1">Hi there, I'm Pi.</div>
+				<div class="chat-bubble">I'm your new personal fitting assistant.</div>
+				<div class="chat-bubble1">
+					<div class="bubble-text">I can find your size in just one click</div>
+					<div class="bubble-content">
+						<p class="content-text">Height</p>
+						<div id="height"></div>
+						<div class="slider-properties">
+							<i class="decreaseVal1">-</i>
+							<input type="text" id="amount" readonly>
+							<i class="increaseVal1">+</i>
+						</div>
+
+						<div class="outer-div">
+							<div class="button-bar">
+								<span class="tag">ft/in</span>
+								<span class="tag active">cm</span>
+							</div>
+						</div>
+
+						<hr>
+						<p class="content-text">Weight</p>
+						<div id="weight"></div>
+						<div class="slider-properties">
+							<i class="decreaseVal2 left">-</i>
+							<input type="text" id="amount1" readonly>
+							<i class="increaseVal2 right">+</i>
+						</div>
+
+						<div class="outer-div">
+							<div class="button-bar">
+								<span class="tag">st/lb</span>
+								<span class="tag active">kg</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="message"><i class="fa fa-info-circle"></i> Select your measurements</div>
+				<div class="chat-bubble2 right"></div>
+			</div>
+			<div id="piFooter">
+				<div class="loader">
+					<img src="PNGs/loading-dots.gif"/>
+					<div class="button-footer">
+						<div class="footer-btn footer-btn__disabled">Tell me my size</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="overlay">
+			<button class="custom-btn" id="openChatBox">
+				Having trouble deciding on a size?
+			</button>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/abad8396eb.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+	<script src="app.js"></script>
+
+</body>
+</html>

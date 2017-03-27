@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@font-face {
+	font-family: 'Sofia Pro Regular';
+	src: url('./Fonts/Sofia Pro/Mostardesign - SofiaProRegular.otf');
+}
+
+@font-face {
+	font-family: 'Sofia Pro Medium';
+	src: url('./Fonts/Sofia Pro/Mostardesign - SofiaProMedium.otf');
+}
+
+@font-face {
+	font-family: 'Sofia Pro Bold';
+	src: url('./Fonts/Sofia Pro/Mostardesign - SofiaProSemiBold.otf');
+}
+
+:root {
+	--main-color: #5e96ed;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+.center{
+	text-align: center;
+}
+
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+
+.container{
+	width: 375px;
+	height: 667px;
+	position:relative;
+	background: url('./PNGs/bg.png');
+}
+
+.overlay, .button-footer, .outer-div{
+	display: flex;
+	justify-content: center;
+}
+
+.custom-btn{
+	position: absolute;
+	border: 1px solid var(--main-color);
+	background-color: var(--main-color);
+	bottom: 25px;
+	z-index: 2;
+	border-radius: 25px;
+	font-size: 14px;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	width: 260px;
+	height: 50px;
+}
+
+.PixiboMainContainer{
+	z-index: 3;
+	position: absolute;
+	display: none;
+	width: 350px;
+	height: 580px;
+	border-radius: 10px;
+	border-color: #FFF;
+	background-color: #fff;
+	bottom: 25px;
+}
+
+#piHeader{
+	background-color: var(--main-color);
+	height: 46px;
+	border-radius: 10px 10px 0 0;
+}
+
+.dark-bg{
+	background-image: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%), url('./PNGs/bg.png');
+}
+.header-content{
+	height: inherit;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	padding: 0 20px;
+}
+
+#piBody{
+	height: 464px;
+	overflow-y: scroll;
+	padding-bottom: 20px;
+}
+.chat-bubble{
+	max-width: 250px;
+	border-radius: 15px 15px 15px 0;
+	background-color: #E6E9ED;
+	padding: 15px;
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 14px;
+	font-family: 'Sofia Pro Regular', sans-serif;
+}
+.chat-bubble1{
+	max-width: 250px;
+	border-radius: 15px 15px 15px 0;
+	/*padding: 15px;*/
+	margin-top: 20px;
+	margin-left: 20px;
+	padding-bottom: 20px;
+	font-size: 14px;
+	font-family: 'Sofia Pro Regular', sans-serif;
+	border: 1px solid #e6e9ed;
+}
+
+.chat-bubble2{
+	display: none;
+	max-width: 250px;
+	background-color: var(--main-color);
+	color: #fff;
+	border-radius: 15px 15px 0 15px;
+	padding: 15px;
+	margin-top: 20px;
+	margin-right: 20px;
+	font-size: 14px;
+	font-family: 'Sofia Pro Regular', sans-serif;
+}
+.chat-bubble1__highlight{
+	border: 1px solid var(--main-color);
+}
+.message{
+	text-align: center;
+	display: none;
+	color: var(--main-color);
+	font-family: 'Sofia Pro Regular', sans-serif;
+}
+
+.bubble-text{
+	border-radius: 15px 15px 0 0;
+	background-color: #e6e9ed;
+	max-width:250px;
+	padding: 15px;
+	/*positon: relative;*/
+}
+
+.bubble-content{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.slider-properties{
+	display: flex;
+	justify-content: space-between;
+}
+.content-text, #height, #weight, .bubble-content i, .bubble-content input, .button-bar{
+	margin-top: 12px;
+}
+
+.bubble-content input{
+	text-align: center;
+	border: 0;
+	color: #8e8e8e;
+	font-size: 15px;
+	font-family: 'Sofia Pro Regular', sans-serif;
+}
+
+.bubble-content i{
+	color: var(--main-color);
+	font-size: 20px;
+	font-style: normal;
+	font-family: 'Sofia Pro Bold', sans-serif;
+}
+
+#piFooter{
+	width: inherit;
+	/*position: absolute;*/
+	bottom: 0;
+	border-top: 1px solid #b1b1b1;
+	height: 70px;
+	border-radius: 0 0 10px 10px;
+
+}
+
+.loader{
+	position: relative;
+	height: inherit;
+}
+.loader img{
+	padding-left: 20px;
+	position: absolute;
+	top:0;
+	bottom:0;
+	margin: auto;
+}
+.footer-btn__disabled{
+	opacity: 0.5;
+}
+.footer-btn{
+	color: #fff;
+	text-align: center;
+	background-color: var(--main-color);
+	border-radius: 15px 15px 0 15px;
+	padding: 15px;
+	width: auto;
+	max-width: 250px;
+	font-size: 16px;
+	font-family: 'Sofia Pro Medium', sans-serif;
+	display: none;
+	margin-top: 10px;
+	-webkit-animation: expand 1s;
+}
+
+@-webkit-keyframes expand{
+    0%{margin-top:100px}
+    100%{margin-top:5px}
+}
+
+
+/*---------- Button Bar Styles -----------*/
+
+.button-bar {
+	display: flex;
+	align-items: center;
+	width: 93px;
+}
+.button-bar .tag {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    width: 50%;
+	border: 1px solid var(--main-color);
+	/*padding-top: 5px;*/
+    border-radius: 5px 0px 0px 5px;
+    text-align: center;
+    height: 29px;
+    color: var(--main-color);
+    cursor: pointer;
+	font-family: 'Sofia Pro Regular', sans-serif;
+	font-size: 13px;
+ }
+.button-bar .tag:last-child {
+    border-radius: 0px 5px 5px 0px;
+}
+.button-bar .tag.active {
+    background: var(--main-color);
+    color: #fff;
+}
+
+/*---------- Slider Styles -----------*/
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+	border: 0.5px solid #d8d8d8;
+	background: #fff;
+	box-shadow: 1px 1px 1px #888888;
+}
+
+
+.ui-slider-handle{
+	border-radius: 50%;
+}
+
+.ui-slider-range{
+	background: var(--main-color);
+}
