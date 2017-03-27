@@ -48,7 +48,7 @@
     	<div class="row">
         	<div class="col-md-12">
             	<h1>Bardot Longer Length<br/>Midi Pencil Dress</h1>
-                <p><strong>&pound;70.00</strong> <a href="#">Free Deliver &amp; Returns *</a></p>
+                <p><strong>&pound;70.00</strong> <a href="#">Free Delivery &amp; Returns *</a></p>
             </div>
         </div>
     </section>
@@ -63,22 +63,62 @@
                 <a href="JavaScript:void(0);" class="pull-right"><img src="img/minus.png" alt="hide"></a>
             </div>
             <ul>
-            	<li><span class="pull-left">Hi there I am Pi</span></li>
-                <li><span class="pull-left">I am your new personal fitting assistant</span></li>
-                <li><span class="pull-left">Lorum Ipsum is dummy text forever</span></li>
-                <li><span class="user-reply pull-right">Tell me my best fit</span></li>
-                <li><span class="user-reply pull-right">Which is best store ?</span></li>
+            	<li><span class="pull-left inner">Hi there I am Pi</span></li>
+                <li><span class="pull-left inner">I am your new personal fitting assistant</span></li>                
+                <li>
+                	<div class="measure-box pull-left">
+                    	<strong>I can find your size in just one click</strong>
+                        <div class="range-input-container">
+                        	<p>Height</p>
+                            <div class="slide-wrapper">
+                            	<input type="text" class="range1" />
+                            	<div id="rl-val" class="text-center">0</div>
+                            </div>
+                           	<div class="btns-row text-center"> 
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-primary">ft/in</button>
+                                  <button type="button" class="btn btn-primary actv">cm</button>
+                                </div>                           
+                            </div>
+                        </div>
+                        <div class="range-input-container">
+                        	<p>Weight</p>
+                            <div class="slide-wrapper">
+                            	<input type="text" class="range2" />
+                            	<div id="r2-val" class="text-center">0</div>
+                            </div>
+                            <div class="btns-row text-center no-border"> 
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-primary">st/lb</button>
+                                  <button type="button" class="btn btn-primary actv">kg</button>
+                                </div>                           
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><span class="inner user-reply pull-right">Tell me my best fit</span></li>
             </ul>
             <div class="chat-ftr">
-            	<input type="text" placeholder="Type Here...">
+            	<input class="reply-txtbox" type="text" placeholder="Type Here...">
             </div>
         </div>
     </div>
     <!--chat ends-->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/powerange.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
+			var r1 = document.querySelector('.range1');
+			var initVals = new Powerange(r1, { min: 16, max: 256, start: 128, hideRange: true, callback: displayValue});
+			function displayValue() { document.getElementById('rl-val').innerHTML = r1.value;
+			}
+			
+			var r2 = document.querySelector('.range2');
+			var initVals = new Powerange(r2, { min: 16, max: 256, start: 128, hideRange: true, callback: d});
+			function d() { document.getElementById('r2-val').innerHTML = r2.value;
+			}		
+				
 			setInterval(function(){ fade(); },2000);
 			function fade(){ $(".chat-btn span").fadeToggle(1000); }
 			$(".chat-btn").click(function(){
@@ -86,7 +126,11 @@
 			});
 			$(".chat-hdr .pull-right").click(function(){
 				$(".chats").slideUp();
-			});			
+			});
+			
+			$('.btns-row .btn-group').on('click', '.btn', function() {
+				$(this).addClass('actv').siblings().removeClass('actv').addClass('btn-primary');
+			});
 		});
     </script>    
 </body>
